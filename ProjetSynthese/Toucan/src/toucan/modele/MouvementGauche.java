@@ -16,7 +16,7 @@ public class MouvementGauche extends Mouvement{
 
 	@Override
 	public int posX(int t) {
-		return  x - (t - x ); 
+		return  this.xarr - t; 
 	}
 
 	@Override

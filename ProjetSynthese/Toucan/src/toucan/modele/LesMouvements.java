@@ -91,6 +91,18 @@ public class LesMouvements {
 		mouvements.add(p);
 	}
 	
+	public void gauche(int d){
+		int t = mouvements.size();
+		Mouvement p;
+		if(t > 0){
+			p =new MouvementGauche(mouvements.get(t-1),d);
+		}
+		else{
+			p = new MouvementGauche(d);
+		}
+		mouvements.add(p);
+	}
+	
 	public void bas(int d) {
 		
 		int t = mouvements.size();

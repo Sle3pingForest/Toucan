@@ -16,6 +16,7 @@ public class Case {
 	}
 
 	public void gauche(int d) {
+		l.gauche(d);
 		
 	}
 	
