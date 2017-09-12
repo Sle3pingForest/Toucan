@@ -17,17 +17,18 @@ public class test {
 		cm.add(c2);
 		LesCases l = new LesCases(cm);
 		
-		l.droite(0, 10);
-		l.droite(1, 15);
+		//l.droite(0, 10);
+		//l.droite(1, 15);
+		//l.gauche(0, 5);
 		//l.bas(0,5);
 		//l.droite(1, 5);
 		//l.droite(1, 5);
 		//l.bas(1, 5);
 		
-		System.out.println(l.toString());
+		
 
 		Modele m = new Modele(l); 
-		//m.creerLesMouvements();
+		m.creerLesMouvements(1,0,10);
 		/*m.creerLesMouvements();*/
 		
 		//System.out.println(l.toString());

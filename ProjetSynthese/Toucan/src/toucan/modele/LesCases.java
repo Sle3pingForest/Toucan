@@ -90,4 +90,14 @@ public class LesCases {
         return sb.toString() ;
     }
 
+	public void haut(int numero, int deplacement) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void stable(int numero, int deplacement) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
