@@ -18,7 +18,7 @@ public class test {
 		LesCases l = new LesCases(cm);
 		
 		l.droite(0, 10);
-		l.droite(0, 10);
+		l.droite(1, 15);
 		//l.bas(0,5);
 		//l.droite(1, 5);
 		//l.droite(1, 5);

@@ -19,7 +19,6 @@ public class MouvementDroite extends Mouvement{
 	@Override
 	public int posX(int t) {
 		// TODO Auto-generated method stub
-		
 		int d = 0;
 		
 		d = x + (t - x ); 

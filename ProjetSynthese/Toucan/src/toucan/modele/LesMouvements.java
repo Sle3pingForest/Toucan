@@ -39,13 +39,10 @@ public class LesMouvements {
 					d =m.get(i).posX(t);
 					trouve=true;
 				
-				} //else d = m.get(m.size()-1).posX(t); 
-			/*else if (temps == t) {
-					d = m.get(i).getXarr();
-					System.out.println("kjsqvfksddskf " + m.get(i).getXarr() + " rze " + m.get(i).getX());
+			} else {
+					d = m.get(m.size()-1).getXarr();
 					trouve=true;
-				
-			}*/
+			}
 			i++;
 		}
 		return d;
@@ -68,16 +65,14 @@ public class LesMouvements {
 			if ( temps >= t) {
 					d =m.get(i).posY(t);
 					trouve=true;
-				} //else d = m.get(m.size()-1).posY(); 
-			
-			/*else if (temps == t) {
-					d = m.get(i).getXarr();
-					System.out.println("kjsqvfksddskf " + m.get(i).getXarr() + " rze " + m.get(i).getX());
+			} else {
+					d = m.get(m.size()-1).getYarr();
 					trouve=true;
-				
-			}*/
+			}
 			i++;
 		}
+		
+		
 		return d;
 	}
 	
