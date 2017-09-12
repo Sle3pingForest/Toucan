@@ -1,0 +1,25 @@
+package toucan.modele;
+
+import java.util.ArrayList;
+
+public class LesMouvements {
+	ArrayList<Mouvement>lesMouvs = new ArrayList<>();
+	protected int xInit;
+	protected int yInit;
+	
+	public LesMouvements(int x, int y , int t){
+		this.xInit = x;
+		this.yInit = y;
+		Mouvement m = new Mouvement(t, x, y);
+	}
+	
+	public int posX(int t){
+		return this.xInit + t;
+	}
+	
+	public int posY(int t){
+		return this.yInit + t;
+	}
+	
+
+}

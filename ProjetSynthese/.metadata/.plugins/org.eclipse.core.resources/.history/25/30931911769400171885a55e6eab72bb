@@ -1,0 +1,17 @@
+package toucan.modele;
+
+public class Case {
+	protected int posX;
+	protected int posY;
+	protected LesMouvements move;
+	
+	public Case(int x, int y){
+		this.posX = x;
+		this.posY = y;
+	}
+	
+	public void monter(int top){
+		
+	}
+	
+}

@@ -1,0 +1,10 @@
+package toucan.modele;
+
+public class Cases {
+	protected LesMouvements move; 
+	
+	public Cases(){
+		
+	}
+
+}

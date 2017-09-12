@@ -1,0 +1,16 @@
+INDEX VERSION 1.127+D:\workspace\Project_UNIVERSITY\L3\Project Synthese\ProjetSynthese\.metadata\.plugins\org.eclipse.jdt.core
+250637574.index
+905495982.index
+498359398.index
+77152575.index
+2932364396.index
+2365437735.index
+3127811361.index
+3992672398.index
+2609000891.index
+1076366683.index
+3259116063.index
+1268174054.index
+713419503.index
+758235720.index
+708528594.index

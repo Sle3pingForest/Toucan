@@ -1,0 +1,7 @@
+package toucan.modele;
+
+public class LesMouvements {
+	Mouvement[] mouvements;
+	
+	
+}

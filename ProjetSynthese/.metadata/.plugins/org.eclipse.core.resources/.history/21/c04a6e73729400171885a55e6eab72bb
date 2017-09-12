@@ -1,0 +1,8 @@
+package toucan.modele;
+
+public  Mouvement {
+	
+	int duree;
+	protected int xDepart;
+
+}

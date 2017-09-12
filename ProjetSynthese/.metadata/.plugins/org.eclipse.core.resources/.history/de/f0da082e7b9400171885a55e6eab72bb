@@ -1,0 +1,28 @@
+package toucan.modele;
+
+public class LesMouvements {
+	Mouvement[] lesMouvs = new Mouvement[4];
+	protected int xInit;
+	protected int yInit;
+	
+	public LesMouvements(int x, int y , int t){
+		this.xInit = x;
+		this.yInit = y;
+		Mouvement m = new Mouvement(t, x, y);
+	}
+	
+	public int posX(int t){
+		return this.xInit + t;
+	}
+	
+	public int posY(int t){
+		return this.yInit + t;
+	}
+	
+	public int goTop(int t){
+		while(t > 0){
+			this.xInit--;
+		}
+		return this.xInit;
+	}
+}

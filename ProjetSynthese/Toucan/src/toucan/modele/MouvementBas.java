@@ -1,0 +1,26 @@
+package toucan.modele;
+
+public class MouvementBas extends Mouvement{
+	
+	public MouvementBas(int d) {
+		this.distance = d;
+		this.yarr = this.y+ d;
+	}
+
+
+	@Override
+	public int posX(int t) {
+		// TODO Auto-generated method stub
+		
+		return xarr;
+	}
+
+	@Override
+	public int posY(int t) {
+		// TODO Auto-generated method stub
+		int d = y + (t - y);
+		System.out.println("sdvffdhjdsj" + d);
+		return y + (t - y);
+	}
+
+}

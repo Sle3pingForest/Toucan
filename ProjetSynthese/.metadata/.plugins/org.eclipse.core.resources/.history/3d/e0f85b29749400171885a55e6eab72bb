@@ -1,0 +1,14 @@
+package toucan.modele;
+
+public class LesMouvements {
+	Mouvement[] lesMouvs;
+	protected int xInit;
+	protected int yInit;
+	
+	public LesMouvements(){
+		
+	}
+	
+	
+	
+}

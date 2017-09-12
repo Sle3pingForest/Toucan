@@ -1,0 +1,32 @@
+package toucan.modele;
+
+public class Case {
+	protected int posX;
+	protected int posY;
+	protected int tpsDeplacement;
+	
+	public Case(int x, int y){
+		this.posX = x;
+		this.posY = y;
+	}
+	
+	public int posX(int t){
+		this.tpsDeplacement = t;
+		return this.posX + this.tpsDeplacement;
+		
+	}
+	
+	public int posY(int t){
+		this.tpsDeplacement = t;
+		return this.posY + this.tpsDeplacement;
+	}
+	
+	public int getTps(){
+		return this.tpsDeplacement;
+	}
+	
+	public void monter(int top){
+		
+	}
+	
+}

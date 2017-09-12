@@ -1,0 +1,32 @@
+package toucan.modele;
+
+public class Mouvement {
+	protected int duree;
+	protected int tDepart;
+	protected int tArriver;
+	protected int xDepart;
+	protected int yDepart;
+	
+	public Mouvement(int time, int x, int y){
+		this.duree = time;
+		this.xDepart = x;
+		this.yDepart = y;
+	}
+
+	public int getX(){
+		return this.xDepart;
+	}
+	
+	public int getY(){
+		return this.yDepart;
+	}
+	
+	public int goTop(int t){
+		while(t > 0){
+			this.xDepart--;
+		}
+		return this.xDepart;
+	}
+	
+	
+}
