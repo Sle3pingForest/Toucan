@@ -21,13 +21,11 @@ public abstract class Mouvement {
 	}
 	
 	 protected Mouvement(Mouvement m ,int d) {
-		distance = m.getDistance() + d;
+		distance = m.getDistance();
 		tempsDepart = m.getTempsArr() + 1;
 		tempsArr = tempsDepart + d;
 		x = m.getXarr();
 		y = m.getYarr();
-		xarr = x + d;
-		yarr = y + d;
 	}
 	
 	public int getTempsDepart() {

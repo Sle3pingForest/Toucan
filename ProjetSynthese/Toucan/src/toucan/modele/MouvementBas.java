@@ -8,6 +8,11 @@ public class MouvementBas extends Mouvement{
 	}
 
 
+	public MouvementBas(Mouvement mouvement, int d) {
+		super(mouvement, d);
+	}
+
+
 	@Override
 	public int posX(int t) {
 		// TODO Auto-generated method stub

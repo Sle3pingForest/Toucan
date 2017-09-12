@@ -9,6 +9,13 @@ public class MouvementDroite extends Mouvement{
 
 
 
+	public MouvementDroite(Mouvement mouvement, int d) {
+		super(mouvement, d);
+		this.xarr = this.x + d;
+	}
+
+
+
 	@Override
 	public int posX(int t) {
 		// TODO Auto-generated method stub
@@ -17,12 +24,14 @@ public class MouvementDroite extends Mouvement{
 		
 		d = x + (t - x ); 
 		
+		
 		return d;
 	}
 
 	@Override
 	public int posY(int t) {
 		// TODO Auto-generated method stub
+		
 		
 		return yarr;
 	}

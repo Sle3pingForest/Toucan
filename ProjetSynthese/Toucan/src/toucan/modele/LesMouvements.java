@@ -87,12 +87,23 @@ public class LesMouvements {
 	}
 	
 	public void droite(int d) {
-		Mouvement p = new MouvementDroite(d);
+		int t = mouvements.size();
+		Mouvement p;
+		
+		if (t > 0)	p = new MouvementDroite(mouvements.get(t-1) , d);
+		else p = new MouvementDroite(d);
+		 
 		mouvements.add(p);
 	}
 	
 	public void bas(int d) {
-		Mouvement p = new MouvementBas(d);
+		
+		int t = mouvements.size();
+		Mouvement p;
+		
+		if (t > 0)	p = new MouvementBas(mouvements.get(t-1) , d);
+		else p = new MouvementBas(d);
+		
 		mouvements.add(p);
 	}
 

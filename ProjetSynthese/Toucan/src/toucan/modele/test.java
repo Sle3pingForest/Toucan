@@ -19,12 +19,14 @@ public class test {
 		
 		l.droite(0, 10);
 		l.droite(0, 10);
-		l.droite(1, 5);
-		l.bas(1, 5);
+		//l.bas(0,5);
+		//l.droite(1, 5);
+		//l.droite(1, 5);
+		//l.bas(1, 5);
 		
 		System.out.println(l.toString());
 
-		Modele m = new Modele(l);
+		Modele m = new Modele(l); 
 		//m.creerLesMouvements();
 		/*m.creerLesMouvements();*/
 		
