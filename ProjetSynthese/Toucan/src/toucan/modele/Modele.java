@@ -19,14 +19,19 @@ public class Modele {
 		switch(i){
 			case OUEST :
 				lesCases.droite(numero, deplacement);
+				break;
 			case SUD :
 				lesCases.bas(numero, deplacement);
+				break;
 			case EST :
 				lesCases.gauche(numero, deplacement);
+				break;
 			case NORD :
 				lesCases.haut(numero, deplacement);
+				break;
 			case STABLE:
 				lesCases.stable(numero, deplacement);
+				break;
 				
 		}
 		System.out.println(lesCases.toString());
