@@ -34,6 +34,11 @@ public class LesCases {
 		this.setTemps(temps+a);
 	}
 	
+	public void gauche(int o, int a){
+		Case c = lesCases.get(o);
+		c.gauche(a);
+		this.setTemps(temps+a);
+	}
 	
 	
 	 // fonction toString de la classe LesCases

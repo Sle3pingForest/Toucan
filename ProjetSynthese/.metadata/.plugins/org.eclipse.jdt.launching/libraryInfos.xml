@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
-<libraryInfo home="D:\Java-7\jdk1.7.0_80" version="1.7.0_80">
-<bootpath>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\resources.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\rt.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\sunrsasign.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\jsse.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\jce.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\charsets.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\jfr.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\classes"/>
-</bootpath>
-<extensionDirs>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\ext"/>
-<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
-</extensionDirs>
-<endorsedDirs>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\endorsed"/>
-</endorsedDirs>
-</libraryInfo>
 <libraryInfo home="/usr/lib/jvm/java-7-openjdk-amd64" version="1.7.0_151">
 <bootpath>
 <entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar"/>
@@ -37,6 +18,25 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\Java-7\jdk1.7.0_80" version="1.7.0_80">
+<bootpath>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\resources.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\rt.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\sunrsasign.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\jsse.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\jce.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\charsets.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\jfr.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 <libraryInfo home="/usr/lib/jvm/oracle-jdk1.8.0_20" version="1.8.0_20">
@@ -58,25 +58,6 @@
 <entry path="/usr/lib/jvm/oracle-jdk1.8.0_20/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="D:\Java-7\jdk1.7.0_80\jre" version="1.7.0_80">
-<bootpath>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\resources.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\rt.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\sunrsasign.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\jsse.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\jce.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\charsets.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\jfr.jar"/>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\classes"/>
-</bootpath>
-<extensionDirs>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\ext"/>
-<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
-</extensionDirs>
-<endorsedDirs>
-<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\endorsed"/>
-</endorsedDirs>
-</libraryInfo>
 <libraryInfo home="/usr/lib/jvm/java-7-openjdk-amd64/jre" version="1.7.0_151">
 <bootpath>
 <entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar"/>
@@ -95,6 +76,25 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\Java-7\jdk1.7.0_80\jre" version="1.7.0_80">
+<bootpath>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\resources.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\rt.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\sunrsasign.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\jsse.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\jce.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\charsets.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\jfr.jar"/>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\Java-7\jdk1.7.0_80\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 </libraryInfos>
