@@ -28,7 +28,7 @@ public class test {
 		
 
 		Modele m = new Modele(l); 
-		m.creerLesMouvements(1,0,10);
+		m.creerLesMouvements(0,1 ,10);
 		/*m.creerLesMouvements();*/
 		
 		//System.out.println(l.toString());

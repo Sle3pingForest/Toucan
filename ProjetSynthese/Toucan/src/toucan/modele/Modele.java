@@ -15,7 +15,7 @@ public class Modele {
 		lesCases = l;
 	}
 
-	public void creerLesMouvements(int i, int numero, int deplacement) {
+	public void creerLesMouvements(int numero, int i,  int deplacement) {
 		switch(i){
 			case OUEST :
 				lesCases.droite(numero, deplacement);
