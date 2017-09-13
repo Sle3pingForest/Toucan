@@ -1,0 +1,106 @@
+package toucan.modele;
+
+import java.util.ArrayList;
+
+public class LesCases {
+	
+	private ArrayList<Case> lesCases;
+	private int temps;
+	
+	public LesCases(ArrayList<Case> c) {
+		lesCases = c;
+		temps = 0;
+	}
+	
+	public void affecter(int o, int a) {
+		
+	}
+	
+	
+	public void comparer(int o, int a){
+		
+	}
+	
+	public void droite(int o, int a) {
+		Case c = lesCases.get(o);
+		c.droite(a+1);
+		this.setTemps(temps+a);
+	}
+	
+	
+	public void bas(int o, int a) {
+		Case c = lesCases.get(o);
+		c.bas(a);
+		this.setTemps(temps+a);
+	}
+	
+	public void gauche(int o, int a){
+		Case c = lesCases.get(o);
+		c.gauche(a);
+		this.setTemps(temps+a);
+	}
+	
+	public void haut(int o, int a){
+		Case c = lesCases.get(o);
+		c.haut(a);
+		this.setTemps(temps+a);
+	}
+	
+	public void stable(int numero, int deplacement) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	 // fonction toString de la classe LesCases
+
+    public ArrayList<Case> getLesCases() {
+		return lesCases;
+	}
+
+	public void setLesCases(ArrayList<Case> lesCases) {
+		this.lesCases = lesCases;
+	}
+
+	public int getMaxTemps() {
+		
+		
+		int maxTemps = 0;
+		
+		for (Case c : lesCases) {
+			int tempscurr = 0;
+			for (Mouvement m : c.getL().getMouvements()) {
+				tempscurr += m.getDistance(); 
+			}
+			if (maxTemps < tempscurr) maxTemps = tempscurr; 
+		}
+		return maxTemps;
+	}
+
+	public void setTemps(int temps) {
+		this.temps = temps;
+	}
+
+	@Override
+    public String toString() {
+        int maxTemps = getMaxTemps() ;
+        StringBuilder sb = new StringBuilder() ;
+        for (int i = 0 ; i < lesCases.size() ; i++) {
+            sb.append("Case " + i + ": ") ;
+            Case c = lesCases.get(i) ;
+            for (int t = 0 ; t <= maxTemps ; t++) {
+                int x = c.posX(t) ;
+                int y = c.posY(t) ;
+                sb.append("\t" + t + " (" + x + "," + y + ") ") ;
+                if (t % 5 == 0) {
+                    sb.append("\n\t") ;
+                }
+            }
+            sb.append("\n") ;
+        }
+        return sb.toString() ;
+    }
+
+
+
+
+}

@@ -1,0 +1,25 @@
+package toucan.modele;
+
+public class MouvementHaut extends Mouvement{
+	
+	public MouvementHaut (int d) {
+		
+	}
+
+
+	public MouvementHaut(Mouvement mouvement, int d) {
+		super( mouvement, d);
+	}
+
+
+	@Override
+	public int posX(int t) {
+		return xarr;
+	}
+
+	@Override
+	public int posY(int t) {
+		return y - ( t - y);
+	}
+
+}

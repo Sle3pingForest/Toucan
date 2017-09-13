@@ -3,20 +3,26 @@ package toucan.modele;
 public class MouvementHaut extends Mouvement{
 	
 	public MouvementHaut (int d) {
+		this.distance = d;
+		this.yarr = this.y - d;
 		
+	}
+
+
+	public MouvementHaut(Mouvement mouvement, int d) {
+		super( mouvement, d);
+		this.yarr = this.y - d;
 	}
 
 
 	@Override
 	public int posX(int t) {
-		// TODO Auto-generated method stub
 		return xarr;
 	}
 
 	@Override
 	public int posY(int t) {
-		// TODO Auto-generated method stub
-		return y - ( t - y);
+		return y -  t ;
 	}
 
 }
