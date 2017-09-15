@@ -5,7 +5,7 @@ public class MouvementBas extends Mouvement{
 	public MouvementBas(int d) {
 		super(d);
 		this.distance = d;
-		this.yarr = this.y+ d;
+		this.yarr = this.y + d;
 		this.xarr = this.x;
 	}
 
@@ -23,8 +23,9 @@ public class MouvementBas extends Mouvement{
 
 	@Override
 	public int posY(int t) {
-		// TODO Auto-generated method stub
-		return y + t ;
+		int d = 0 ; 		
+		d = this.y + t ; 
+		return d;
 	}
 
 }
