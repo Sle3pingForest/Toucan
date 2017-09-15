@@ -28,8 +28,9 @@ public class test {
 		
 
 		Modele m = new Modele(l); 
-		m.creerLesMouvements(0,2 ,15);
-		m.creerLesMouvements(0,1 ,5);
+		m.creerLesMouvements(0,1 ,15);
+		m.creerLesMouvements(0,3 ,15);
+
 		//m.creerLesMouvements(0,4 ,5);
 		/*m.creerLesMouvements();*/
 		

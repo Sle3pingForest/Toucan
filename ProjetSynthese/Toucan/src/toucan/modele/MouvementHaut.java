@@ -3,8 +3,10 @@ package toucan.modele;
 public class MouvementHaut extends Mouvement{
 	
 	public MouvementHaut (int d) {
+		super(d);
 		this.distance = d;
 		this.yarr = this.y - d;
+		this.xarr = this.x;
 		
 	}
 

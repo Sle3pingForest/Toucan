@@ -10,18 +10,14 @@ public abstract class Mouvement {
 	int xarr;
 	int yarr;
 	
-	protected Mouvement(){
-		distance = 0;
+	protected Mouvement(int d){
 		tempsDepart = 0;
-		tempsArr = 0;
 		x = 0;
 		y = 0;
-		xarr = 0;
-		yarr = 0;
 	}
 	
 	 protected Mouvement(Mouvement m ,int d) {
-		distance = m.getDistance();
+		distance = d;
 		tempsDepart = m.getTempsArr() + 1;
 		tempsArr = tempsDepart + d;
 		x = m.getXarr();

@@ -33,17 +33,16 @@ public class LesMouvements {
 		
 		while (m.size() > i && !trouve)	{
 			
-			temps += m.get(i).getDistance();
+			temps += m.get(i).getTempsArr();
 			
 			if ( temps >= t) {
 					d = m.get(i).posX(t);
 					trouve=true;
 				
 			} else {
-					d = m.get(m.size()-1).getXarr();
-					trouve=true;
+					i++;
 			}
-			i++;
+			
 		}
 		return d;
 	}
@@ -60,19 +59,15 @@ public class LesMouvements {
 		
 		while (m.size() > i && !trouve)	{
 			
-			temps += m.get(i).getDistance();
+			temps += m.get(i).getTempsArr();
 			
 			if ( temps >= t) {
 					d =m.get(i).posY(t);
 					trouve=true;
 			} else {
-					d = m.get(m.size()-1).getYarr();
-					trouve=true;
+				i++;
 			}
-			i++;
 		}
-		
-		
 		return d;
 	}
 	

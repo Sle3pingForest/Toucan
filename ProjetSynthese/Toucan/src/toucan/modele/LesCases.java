@@ -89,6 +89,7 @@ public class LesCases {
             Case c = lesCases.get(i) ;
             for (int t = 0 ; t <= maxTemps ; t++) {
                 int x = c.posX(t) ;
+                //System.out.println("TEMPS  T :" + x);
                 int y = c.posY(t) ;
                 sb.append("\t" + t + " (" + x + "," + y + ") ") ;
                 if (t % 5 == 0) {
