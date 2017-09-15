@@ -28,7 +28,11 @@ public class test {
 		
 
 		Modele m = new Modele(l); 
-		m.creerLesMouvements(0,2 ,5);
+		m.creerLesMouvements(0,1 ,5);
+		m.creerLesMouvements(0,4 ,5);
+		m.creerLesMouvements(0,3 ,5);
+	//	m.creerLesMouvements(0,3 ,5);
+		//m.creerLesMouvements(0,4 ,5);
 		/*m.creerLesMouvements();*/
 		
 		System.out.println(l.toString());

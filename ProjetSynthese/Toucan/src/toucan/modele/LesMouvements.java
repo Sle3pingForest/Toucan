@@ -38,6 +38,7 @@ public class LesMouvements {
 			if ( temps >= t) {
 					d = m.get(i).posX(t);
 					trouve=true;
+					System.out.println(m.get(i).getX() + "   "  +m.get(i).getXarr());
 				
 			} else {
 					i++;
@@ -68,6 +69,7 @@ public class LesMouvements {
 				i++;
 			}
 		}
+		
 		return d;
 	}
 	

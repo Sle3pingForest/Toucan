@@ -20,8 +20,6 @@ public abstract class Mouvement {
 		distance = d;
 		tempsDepart = m.getTempsArr() + 1;
 		tempsArr = tempsDepart + d;
-		x = m.getXarr();
-		y = m.getYarr();
 	}
 	
 	public int getTempsDepart() {

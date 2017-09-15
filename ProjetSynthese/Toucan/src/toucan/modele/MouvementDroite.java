@@ -14,7 +14,9 @@ public class MouvementDroite extends Mouvement{
 
 	public MouvementDroite(Mouvement mouvement, int d) {
 		super(mouvement, d);
-		this.xarr = this.x + d;
+		this.x = mouvement.getXarr() + 1;
+		this.xarr = this.x + d - 1;
+		this.y = mouvement.getYarr();
 		this.yarr = this.y;
 	}
 
@@ -24,8 +26,7 @@ public class MouvementDroite extends Mouvement{
 	public int posX(int t) {
 		int d = 0;
 		
-		d = x + (t - x ); 
-		
+		d = t - tempsDepart + x; 
 		
 		return d;
 	}

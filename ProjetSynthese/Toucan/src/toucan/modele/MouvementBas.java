@@ -5,6 +5,7 @@ public class MouvementBas extends Mouvement{
 	public MouvementBas(int d) {
 		super(d);
 		this.distance = d;
+		this.tempsArr = this.tempsDepart + d;
 		this.yarr = this.y + d;
 		this.xarr = this.x;
 	}
@@ -12,7 +13,10 @@ public class MouvementBas extends Mouvement{
 
 	public MouvementBas(Mouvement mouvement, int d) {
 		super(mouvement, d);
-		this.yarr = this.y + d;
+		this.x = mouvement.getXarr();
+		this.y = mouvement.getYarr() + 1;
+		this.xarr = mouvement.getXarr();
+		this.yarr = this.y + d - 1;
 	}
 
 
@@ -24,7 +28,7 @@ public class MouvementBas extends Mouvement{
 	@Override
 	public int posY(int t) {
 		int d = 0 ; 		
-		d = this.y + t ; 
+		d = t - tempsDepart + y ; 
 		return d;
 	}
 
