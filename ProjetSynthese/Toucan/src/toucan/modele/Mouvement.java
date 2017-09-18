@@ -10,18 +10,30 @@ public abstract class Mouvement {
 	int xarr;
 	int yarr;
 	
+	/**
+	 * 
+	 * @param d
+	 */
 	protected Mouvement(int d){
 		tempsDepart = 0;
 		x = 0;
 		y = 0;
 	}
 	
+	/**
+	 * Constructeur qui recupere les parametres d un dernier mouvement
+	 * @param m
+	 * @param d
+	 */
 	 protected Mouvement(Mouvement m ,int d) {
 		distance = d;
 		tempsDepart = m.getTempsArr() + 1;
 		tempsArr = tempsDepart + d - 1;
 	}
-	
+	 
+	 
+	// Getter et Setter
+	 
 	public int getTempsDepart() {
 		return tempsDepart;
 	}

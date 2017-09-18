@@ -21,7 +21,9 @@ public class MouvementDroite extends Mouvement{
 	}
 
 
-
+	/**
+	 * Retourne la position x d une case par rapport au temps t
+	 */
 	@Override
 	public int posX(int t) {
 		int d = 0;
@@ -30,6 +32,9 @@ public class MouvementDroite extends Mouvement{
 		return d;
 	}
 
+	/**
+	 * Retourne la position y d une case par rapport au temps t
+	 */
 	@Override
 	public int posY(int t) {
 		// TODO Auto-generated method stub

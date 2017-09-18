@@ -19,12 +19,17 @@ public class MouvementBas extends Mouvement{
 		this.yarr = this.y + d - 1;
 	}
 
-
+	/**
+	 * Retourne la position x d une case par rapport au temps t
+	 */
 	@Override
 	public int posX(int t) {
 		return xarr;
 	}
 
+	/**
+	 * Retourne la position y d une case par rapport au temps t
+	 */
 	@Override
 	public int posY(int t) {
 		int d = 0 ; 	
