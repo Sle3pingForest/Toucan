@@ -1,0 +1,51 @@
+package toucan.modele;
+
+import java.util.ArrayList;
+
+public class Modele {
+	
+	LesCases lesCases;
+	public static final int OUEST = 1;
+	public static final int SUD = 2;
+	public static final int EST = 3;
+	public static final int NORD = 4;
+	public static final int STABLE = 0;
+	
+	public Modele(int i) {
+		this.lesCases = new LesCases(i);
+	}
+
+	public LesCases getLesCases() {
+		return lesCases;
+	}
+
+	public void setLesCases(LesCases lesCases) {
+		this.lesCases = lesCases;
+	}
+
+	public void creerLesMouvements(int ... i) {
+		assert(i.length%3 == 0) :"Le nombre de Parametre doit etre multiple de 3";
+		switch(i[1]){
+			case OUEST :
+				lesCases.droite(i[1], deplacement);
+				break;
+			case SUD :
+				lesCases.bas(i[1], deplacement);
+				break;
+			case EST :
+				lesCases.gauche(numero, deplacement);
+				break;
+			case NORD :
+				lesCases.haut(numero, deplacement);
+				break;
+			case STABLE:
+				lesCases.stable(numero, deplacement);
+				break;
+				
+		}
+		
+	}
+
+
+
+}

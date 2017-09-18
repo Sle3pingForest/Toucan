@@ -47,34 +47,11 @@ public class Case {
 		return l.posX(t);
 	}
 	
-	
+
 	
 	public int posY(int t) {
 		
 		return l.posY(t);
-		
-		/*int temps = 0;
-		int d = 0,i =0;
-		boolean trouve = false;
-		
-		ArrayList<Mouvement> m = l.getMouvements();
-		
-		while (m.size() > i && !trouve)	{
-			
-			temps += m.get(i).getDistance();
-			if ( temps > t) {
-				if (m.get(i).getY() < m.get(i).getYarr())	d = m.get(i).getY() + (t - m.get(i).getY() ); 
-				else d = m.get(i).getY() - ( t - m.get(i).getY());
-				trouve=true;
-			} else if (temps == t) {
-				d = m.get(i).getYarr();
-				trouve=true;
-			
-			}
-			i++;
-		
-		}
-		return d;*/
 		
 	}
 

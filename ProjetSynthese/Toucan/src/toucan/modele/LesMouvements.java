@@ -134,6 +134,10 @@ public class LesMouvements {
 	
 	
 
+	public void setPosition(int x, int y){
+		this.xinit = x;
+		this.yinit = y;
+	}
 
 	public int getXinit() {
 		return xinit;

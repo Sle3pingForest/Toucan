@@ -7,8 +7,8 @@ public class LesCases {
 	private ArrayList<Case> lesCases;
 	private int temps;
 	
-	public LesCases(ArrayList<Case> c) {
-		lesCases = c;
+	public LesCases(int i) {
+		this.lesCases = new ArrayList<Case>(i);
 		temps = 0;
 	}
 	
@@ -56,9 +56,17 @@ public class LesCases {
     public ArrayList<Case> getCases() {
 		return lesCases;
 	}
+    
+    public Case getCase(int i){
+    	return this.lesCases.get(i);
+    }
 
 	public void setLesCases(ArrayList<Case> lesCases) {
 		this.lesCases = lesCases;
+	}
+	
+	public void ajouterCase(Case c){
+		this.lesCases.add(c);
 	}
 
 	public int getMaxTemps() {

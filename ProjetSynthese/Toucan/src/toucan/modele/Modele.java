@@ -11,40 +11,60 @@ public class Modele {
 	public static final int NORD = 4;
 	public static final int STABLE = 0;
 	
-	public Modele(LesCases l) {
-		lesCases = l;
-	}
-
-	public LesCases getLesCases() {
-		return lesCases;
-	}
-
-	public void setLesCases(LesCases lesCases) {
-		this.lesCases = lesCases;
-	}
-
-	public void creerLesMouvements(int numero, int i,  int deplacement) {
-		switch(i){
-			case OUEST :
-				lesCases.droite(numero, deplacement);
-				break;
-			case SUD :
-				lesCases.bas(numero, deplacement);
-				break;
-			case EST :
-				lesCases.gauche(numero, deplacement);
-				break;
-			case NORD :
-				lesCases.haut(numero, deplacement);
-				break;
-			case STABLE:
-				lesCases.stable(numero, deplacement);
-				break;
-				
+	public Modele(int i) {
+		this.lesCases = new LesCases(i);
+		for(int j = 0 ; j < i ; j++){
+			Case c = new Case();
+			this.lesCases.ajouterCase(c);
 		}
+	}
+	
+	public void setPosition (int noCase, int x, int y){
+		this.lesCases.getCase(noCase).getL().setPosition(x,y);
+	}
+
+	public void creerLesMouvements(int ... i) {
+		assert(i.length%3 == 0) :"Le nombre de Parametre doit etre multiple de 3";
+		for(int j = 0; j < i.length ; j+=3){
+			switch(i[j+1]){
+				case OUEST :
+					lesCases.droite(i[j], i[j+2]);
+					break;
+				case SUD :
+					lesCases.bas(i[j], i[j+2]);
+					break;
+				case EST :
+					lesCases.gauche(i[j], i[j+2]);
+					break;
+				case NORD :
+					lesCases.haut(i[j], i[j+2]);
+					break;
+				case STABLE:
+					lesCases.stable(i[j], i[j+2]);
+					break;
+			}	
+		}
+	}
+	
+	public String toString() {
+		
+		return null;
+		
 		
 	}
+	public static void main(String[] args) {
 
+		Modele m = new Modele(2); 
+		
 
+		m.creerLesMouvements(0,1 ,5);
+		m.creerLesMouvements(0,3 ,5);
+		m.creerLesMouvements(0,2 ,5);
+		m.creerLesMouvements(0,4 ,5);
+		m.creerLesMouvements(0,1 ,5);
+		m.creerLesMouvements(0,3 ,5);
+
+		System.out.println(m.toString());
+	}
 
 }
