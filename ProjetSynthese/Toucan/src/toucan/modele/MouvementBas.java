@@ -27,8 +27,9 @@ public class MouvementBas extends Mouvement{
 
 	@Override
 	public int posY(int t) {
-		int d = 0 ; 		
+		int d = 0 ; 	
 		d = t - tempsDepart + y ; 
+		
 		return d;
 	}
 

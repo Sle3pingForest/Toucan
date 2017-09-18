@@ -15,6 +15,14 @@ public class Modele {
 		lesCases = l;
 	}
 
+	public LesCases getLesCases() {
+		return lesCases;
+	}
+
+	public void setLesCases(LesCases lesCases) {
+		this.lesCases = lesCases;
+	}
+
 	public void creerLesMouvements(int numero, int i,  int deplacement) {
 		switch(i){
 			case OUEST :
@@ -36,4 +44,7 @@ public class Modele {
 		}
 		
 	}
+
+
+
 }

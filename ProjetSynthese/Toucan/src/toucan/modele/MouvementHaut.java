@@ -14,6 +14,7 @@ public class MouvementHaut extends Mouvement{
 
 	public MouvementHaut(Mouvement mouvement, int d) {
 		super( mouvement, d);
+
 		this.x = mouvement.getXarr();
 		this.xarr = this.x;
 		if (mouvement.getYarr() > 0 ){
@@ -37,6 +38,7 @@ public class MouvementHaut extends Mouvement{
 		int d = 0;
 		d =  tempsDepart - t - y; 
 		if (d < 0) d = 0;
+		
 		return d;
 	}
 }

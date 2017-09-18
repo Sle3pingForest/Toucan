@@ -29,12 +29,21 @@ public class test {
 
 		Modele m = new Modele(l); 
 		m.creerLesMouvements(0,1 ,5);
-		m.creerLesMouvements(0,4 ,5);
 		m.creerLesMouvements(0,3 ,5);
-	//	m.creerLesMouvements(0,3 ,5);
-		//m.creerLesMouvements(0,4 ,5);
-		/*m.creerLesMouvements();*/
+		m.creerLesMouvements(0,2 ,5);
+		m.creerLesMouvements(0,4 ,5);
+		m.creerLesMouvements(0,1 ,5);
+		m.creerLesMouvements(0,3 ,5);
 		
+		
+		ArrayList<Case> md = m.getLesCases().getCases();
+		
+		for (Case po : md) {
+			for (Mouvement mm : po.getL().getMouvements()) {
+				
+				System.out.println("   " + mm.toString() + "sdfksdfbjk     " + mm.getTempsDepart() + "   "  + mm.getX());
+			}
+		}
 		System.out.println(l.toString());
 	}
 

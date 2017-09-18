@@ -25,7 +25,6 @@ public class MouvementDroite extends Mouvement{
 	@Override
 	public int posX(int t) {
 		int d = 0;
-		
 		d = t - tempsDepart + x; 
 		
 		return d;
@@ -34,7 +33,6 @@ public class MouvementDroite extends Mouvement{
 	@Override
 	public int posY(int t) {
 		// TODO Auto-generated method stub
-		
 		
 		return yarr;
 	}

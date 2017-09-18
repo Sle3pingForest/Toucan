@@ -19,7 +19,7 @@ public abstract class Mouvement {
 	 protected Mouvement(Mouvement m ,int d) {
 		distance = d;
 		tempsDepart = m.getTempsArr() + 1;
-		tempsArr = tempsDepart + d;
+		tempsArr = tempsDepart + d - 1;
 	}
 	
 	public int getTempsDepart() {
