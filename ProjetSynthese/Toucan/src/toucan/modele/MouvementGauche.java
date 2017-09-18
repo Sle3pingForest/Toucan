@@ -34,7 +34,6 @@ public class MouvementGauche extends Mouvement{
 		int d = 0;
 		d =  x - (t - tempsDepart); 
 		if (d < 0) d = 0;
-		
 		return d;
 	}
 
@@ -43,7 +42,9 @@ public class MouvementGauche extends Mouvement{
 	 */
 	@Override
 	public int posY(int t) {
-		// TODO Auto-generated method stub
+		if( yarr < 0){
+			yarr = 0;
+		}
 		return yarr;
 	}
 

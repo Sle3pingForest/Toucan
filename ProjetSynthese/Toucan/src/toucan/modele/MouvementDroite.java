@@ -37,8 +37,9 @@ public class MouvementDroite extends Mouvement{
 	 */
 	@Override
 	public int posY(int t) {
-		// TODO Auto-generated method stub
-		
+		if( yarr < 0 ) {
+			this.yarr = 0;
+		}
 		return yarr;
 	}
 

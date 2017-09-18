@@ -1,6 +1,5 @@
 package toucan.modele;
 
-import java.util.ArrayList;
 
 public class Modele {
 	
@@ -10,10 +9,12 @@ public class Modele {
 	public static final int EST = 3;
 	public static final int NORD = 4;
 	public static final int STABLE = 0;
+	private int nbCase;
 	
 	public Modele(int i) {
 		this.lesCases = new LesCases(i);
-		for(int j = 0 ; j < i ; j++){
+		this.nbCase = i ;
+		for(int j = 0 ; j < this.nbCase ; j++){
 			Case c = new Case();
 			this.lesCases.ajouterCase(c);
 		}
@@ -23,9 +24,17 @@ public class Modele {
 		this.lesCases.getCase(noCase).getL().setPosition(x,y);
 	}
 
+	/**
+	 * 
+	 * @param i tableau de multiple de 3 : 
+	 * 1er indice = numero de case
+	 * 2emm indice = direction de deplacement
+	 * 3emme indice = nb de deplacement
+	 */
 	public void creerLesMouvements(int ... i) {
 		assert(i.length%3 == 0) :"Le nombre de Parametre doit etre multiple de 3";
 		for(int j = 0; j < i.length ; j+=3){
+			assert(this.nbCase > i[j]): "Vous essayez d'acceder a une case non existee";
 			switch(i[j+1]){
 				case OUEST :
 					lesCases.droite(i[j], i[j+2]);
@@ -49,22 +58,6 @@ public class Modele {
 	public String toString() {
 		
 		return lesCases.toString();
-		
-		
-	}
-	public static void main(String[] args) {
-
-		Modele m = new Modele(2); 
-		
-
-		m.creerLesMouvements(0,1 ,5);
-		m.creerLesMouvements(0,3 ,5);
-		m.creerLesMouvements(0,2 ,5);
-		m.creerLesMouvements(0,4 ,5);
-		m.creerLesMouvements(0,1 ,5);
-		m.creerLesMouvements(0,3 ,5);
-
-		System.out.println(m.toString());
 	}
 
 }

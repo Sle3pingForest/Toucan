@@ -1,7 +1,5 @@
 package toucan.modele;
 
-import java.util.ArrayList;
-
 public class Case {
 	
 	LesMouvements l;
@@ -17,6 +15,11 @@ public class Case {
 
 	public void gauche(int d) {
 		l.gauche(d);
+		
+	}
+	
+	public void stable(int d) {
+		l.stable(d);
 		
 	}
 	

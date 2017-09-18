@@ -24,6 +24,9 @@ public class MouvementBas extends Mouvement{
 	 */
 	@Override
 	public int posX(int t) {
+		if(xarr < 0){
+			xarr = 0;
+		}
 		return xarr;
 	}
 

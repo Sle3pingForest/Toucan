@@ -73,9 +73,10 @@ public class LesCases {
 	 * @param o numero de case
 	 * @param a taille du deplacement
 	 */
-	public void stable(int numero, int deplacement) {
-		// TODO Auto-generated method stub
-
+	public void stable(int o, int a) {
+		Case c = lesCases.get(o);
+		c.stable(a);
+		this.setTemps(temps+a);
 	}
 
 	

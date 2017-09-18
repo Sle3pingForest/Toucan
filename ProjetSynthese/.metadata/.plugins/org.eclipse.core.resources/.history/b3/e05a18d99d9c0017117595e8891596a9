@@ -1,0 +1,17 @@
+package toucan.modele;
+
+public class MouvementStable extends Mouvement {
+
+	@Override
+	public int posX(int t) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int posY(int t) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

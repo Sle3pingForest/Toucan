@@ -1,0 +1,11 @@
+package toucan.modele;
+
+public class Main {
+	
+	public static void main(String[] args) {
+
+		Modele m = new Modele(2); 
+		m.creerLesMouvements(0,Modele.EST,5, 0, Modele.NORD,10, 1, Modele.STABLE, 10, 1, Modele.SUD,10);
+		System.out.println(m.toString());
+	}
+}
