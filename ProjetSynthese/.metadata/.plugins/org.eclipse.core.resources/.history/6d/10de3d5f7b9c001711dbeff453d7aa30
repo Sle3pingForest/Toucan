@@ -48,7 +48,7 @@ public class Modele {
 	
 	public String toString() {
 		
-		return lesCases.toString();
+		return null;
 		
 		
 	}
